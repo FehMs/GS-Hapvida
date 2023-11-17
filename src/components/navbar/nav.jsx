@@ -1,6 +1,6 @@
 import React from 'react'
 import { VscAccount } from "react-icons/vsc";
-import Linha from '../Linha/Linha';
+import { Link } from 'react-router-dom';
 import iconlogo from '../../images/iconlogo.png'
 import './nav.css'
 
@@ -8,10 +8,13 @@ const nav = () => {
   return (
     <>
     <header>
-        <img src={iconlogo} alt="logo"/>
+        <div className='logo'>
+            <Link to="/"><img src={iconlogo} alt="logo"/></Link>
+            <Link to="/"><h2 className='h2logo'>HAPVIDA</h2></Link>
+        </div>
         <div className='nav'>
-            <a className='right'>Home</a>
-            <a>Quem somos</a>
+            <Link className='right' to="/">Home</Link>
+            <Link to="/sobre">Quem Somos</Link>
         </div>
         <div className='nav-login'>
             <VscAccount size={40} color="#000"/>

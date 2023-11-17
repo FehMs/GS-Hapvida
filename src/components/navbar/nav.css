@@ -5,10 +5,14 @@ header{
     justify-content: space-around;
     height: 90px;
     background-color: rgb(255, 255, 255);
+    position: relative;
+    right: 40px;
+    
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: #242424;
+    text-decoration: none;
 
 }
 
@@ -18,4 +22,11 @@ a {
 
 header img {
     width: 90px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }

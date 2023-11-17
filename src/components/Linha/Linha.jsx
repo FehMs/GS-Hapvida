@@ -3,7 +3,7 @@ import './Linha.css'
 const Linha = () => {
     return(
         <div className='line'>
-            <ul class="separator">
+            <ul className="separator">
                 <li></li>
             </ul>
         </div>
